@@ -1,0 +1,29 @@
+{
+  "platform-version": "2.2",
+  "product": {
+    "freshworks_crm": {
+      "events": {
+        "onContactCreate": {
+          "handler": "onContactCreateHandler"
+        },
+        "onTaskUpdate": {
+          "handler": "onTaskUpdateCallback"
+        }
+      },
+      "functions": {
+        "validateVIPPhoneNumber": {
+          "timeout": 5
+        }
+      }
+    }
+  },
+  "whitelisted-domains": [],
+  "engines": {
+    "node": "14.19.3",
+    "fdk": "8.3.3"
+    
+  },
+  "dependencies": {
+    "axios": "0.27.2"
+  }
+}

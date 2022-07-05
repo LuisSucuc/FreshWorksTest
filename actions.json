@@ -1,0 +1,26 @@
+{
+    "validateVIPPhoneNumber": {
+        "display_name": "validate VIP users based on phone numbers",
+        "parameters": {
+            "$schema": "http://json-schema.org/draft-07/schema#",
+            "type": "object",
+            "properties": {
+                "input": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "input"
+            ]
+        },
+        "response": {
+            "type": "object",
+            "properties": {
+                "user_id": {
+                    "type": "string"
+                }
+            }
+        },
+        "description": "Sends an OTP to user's registered email address"
+    }
+}
